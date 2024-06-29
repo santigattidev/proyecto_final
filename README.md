@@ -1,7 +1,7 @@
-#Proyecto final de Python - CoderHouse + Gatti Santiago
+# Proyecto final de Python - CoderHouse + Gatti Santiago
 
 ----------------------------
-##TO DO
+## TO DO
 ----------------------------
 - ✅ Use virtual enviroment and freeze requirements
 - ✅ .gitignore
