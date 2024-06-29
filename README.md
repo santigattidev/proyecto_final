@@ -2,6 +2,7 @@
 
 ----------------------------
 ##TO DO
+----------------------------
 - ✅ Use virtual enviroment and freeze requirements
 - ✅ .gitignore
 - ✅ Put a json with useful scripts
