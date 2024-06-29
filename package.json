@@ -1,0 +1,14 @@
+{
+  "name": "proyecto_final",
+  "version": "1.0.0",
+  "description": "Proyecto final de Python - CoderHouse + Gatti Santiago",
+  "main": "index.js",
+  "scripts": {
+    "dev":"py ./myproject/manage.py runserver",
+    "migrate1":"py ./myproject/manage.py makemigrations",
+    "migrate2":"py ./myproject/manage.py migrate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
