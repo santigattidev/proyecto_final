@@ -9,6 +9,7 @@
 - ✅ Use a bootstrap static and make it reusable on other templates
 - ❌ Make a form that saves data on the database
 - ❌ Search bar for that same model->object
-- ❌ Login
-- ❌ Sign-up
+- ✅ Login
+- ✅ Sign-up
+- ❌ Models accesible via login only
 - ❌ Edit profile with avatar
