@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView
-from . models import Portfolio
 from . forms import SignUpPortfolio
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate, login as django_login
