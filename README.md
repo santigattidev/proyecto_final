@@ -8,8 +8,10 @@ This project is the culmination of the Python course at CoderHouse. The main obj
 ----------------------------
 ## How to run the project
 ----------------------------
+- Install a virtual enviroment =====> $ python -m venv virtualEnv
 - Start the Virtual Enviroment =====> $ . /virtualEnv/Scripts/Activate
 - Install all dependencies needed ==> $ pip install -r requirements.txt
+- Migrate all models ===============> $ npm run migrate2
 - Run the project ==================> $ npm run dev
 - For a full list of commands check "package.json -> scripts"
 
@@ -24,5 +26,5 @@ This project is the culmination of the Python course at CoderHouse. The main obj
 - ❌ Search bar for that same model->object ===> Since it's not obligatory i'll do it when i have more time so i can upload it as a portfolio 
 - ✅ Login
 - ✅ Sign-up
-- ✅ Models accesible via login only
+- ✅ Models accesible via login only with mixin
 - ✅ Edit profile with avatar

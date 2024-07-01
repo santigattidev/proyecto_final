@@ -51,7 +51,7 @@
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 {% block main %}
-                <img class="masthead-avatar mb-5" {% if request.user.is_authenticated %} src="{{request.user.portfolio.image.url}}" {% else %} src={% static "assets/img/avataaars.svg"%} {% endif %} alt="..." />
+                <img class="masthead-avatar mb-5" {% if request.user.is_authenticated and request.user.portfolio.image.url != ""%} src="{{request.user.portfolio.image.url}}" {% else %} src={% static "assets/img/avataaars.svg"%} {% endif %} alt="..." />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">
                     {% if request.user.is_authenticated %}
