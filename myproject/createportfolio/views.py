@@ -4,7 +4,7 @@ from . models import Portfolio
 from . forms import SignUpPortfolio
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate, login as django_login
-
+from editportfolio.models import Portfolio
 # Create your views here.
 # class CreatePortfolio(CreateView):
 #   model = Portfolio
@@ -29,7 +29,9 @@ def login(request):
       username = form.cleaned_data.get('username')
       password = form.cleaned_data.get('password')
       user = authenticate(username=username, password=password)
-      if user is not None:
-        django_login(request, user)
-        return redirect('index')
+      django_login(request, user)
+      
+      Portfolio.objects.get_or_create(user=user)
+      
+      return redirect('index')
   return render(request, 'createportfolio/portfolio-login.html', {'form': form})

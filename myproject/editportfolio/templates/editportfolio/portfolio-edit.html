@@ -1,0 +1,8 @@
+{% extends "start/index.html" %}
+{% block main %}
+<form action={% url "portfolio" %} method="POST" enctype='multipart/form-data'>
+  {% csrf_token %}
+  {{form}}
+  <button>Login and start uploading...</button>
+</form>
+{% endblock main %}
